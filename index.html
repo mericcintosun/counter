@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <link rel="icon" href="assets/meric-favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <nav>
+      <h1 class="nav-title">COUNTER</h1>
+      <div class="prefence">
+        <h1 class="reset-title" onclick="resetFunction();">RESET</h1>
+        <a
+          href="https://github.com/mericcintosun"
+          class="github-icon"
+          target="_blank"
+          ><i class="bi bi-github"></i
+        ></a>
+      </div>
+    </nav>
+    <main>
+      <h1 class="counter-title">Counter</h1>
+      <h1 id="count" class="reset">0</h1>
+      <div class="buttons">
+        <button class="decrease" onclick="decreaseFunction(); colorControl();">DECREASE</button>
+        <button class="reset" onclick="resetFunction(); colorControl();">RESET</button>
+        <button class="increase" onclick="increaseFunction(); colorControl();">INCREASE</button>
+      </div>
+    </main>
+  </body>
+  <script src="app.js"></script>
+</html>
